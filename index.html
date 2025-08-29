@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Markmap</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+#mindmap {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+.markmap-dark {
+  background: #27272a;
+  color: white;
+}
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/style.css">
+</head>
+<body>
+<svg id="mindmap"></svg>
+<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-view@0.18.12/dist/browser/index.js"></script><script src="https://cdn.jsdelivr.net/npm/markmap-toolbar@0.18.12/dist/index.js"></script><script>(r => {
+              setTimeout(r);
+            })(function renderToolbar() {
+  const {
+    markmap,
+    mm
+  } = window;
+  const {
+    el
+  } = markmap.Toolbar.create(mm);
+  el.setAttribute('style', 'position:absolute;bottom:20px;right:20px');
+  document.body.append(el);
+})</script><script>((getMarkmap, getOptions, root2, jsonOptions) => {
+              const markmap = getMarkmap();
+              window.mm = markmap.Markmap.create(
+                "svg#mindmap",
+                (getOptions || markmap.deriveOptions)(jsonOptions),
+                root2
+              );
+              if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+                document.documentElement.classList.add("markmap-dark");
+              }
+            })(() => window.markmap,null,{"content":"&#x1f9e0; Historia de la Inteligencia Artificial","children":[{"content":"&#x1f539; A&#xf1;os 40&#x2013;50: <em>Los Visionarios</em>","children":[{"content":"<strong>1943</strong> &#x1f9e9; Warren McCulloch &amp; Walter Pitts &#x2192; <em>Modelo de la neurona artificial</em>.","children":[],"payload":{"tag":"li","lines":"3,4"}},{"content":"<strong>1950</strong> &#x1f468;&#x200d;&#x1f4bb; Alan Turing &#x2192; <em>Computing Machinery and Intelligence</em>, plantea el <strong>Test de Turing</strong>.","children":[],"payload":{"tag":"li","lines":"4,5"}},{"content":"<strong>1956</strong> &#x1f393; Conferencia de <strong>Dartmouth</strong> (Nacimiento oficial de la IA).","children":[{"content":"John McCarthy acu&#xf1;a el t&#xe9;rmino <strong>&quot;Inteligencia Artificial&quot;</strong>.","children":[],"payload":{"tag":"li","lines":"6,7"}},{"content":"Participan: <em>Marvin Minsky, Claude Shannon, Nathaniel Rochester, Allen Newell, Herbert Simon</em>.","children":[],"payload":{"tag":"li","lines":"7,8"}},{"content":"Newell &amp; Simon presentan <em>Logic Theorist</em>.","children":[],"payload":{"tag":"li","lines":"8,10"}}],"payload":{"tag":"li","lines":"5,10"}}],"payload":{"tag":"h2","lines":"2,3"}},{"content":"&#x1f331; A&#xf1;os 60 &#x2013; Principios de los 70: <em>Optimismo y Primeros &#xc9;xitos</em>","children":[{"content":"<strong>1958</strong> &#x1f4dc; John McCarthy &#x2192; crea el lenguaje <strong>LISP</strong>.","children":[],"payload":{"tag":"li","lines":"13,14"}},{"content":"<strong>1966</strong> &#x1f4ac; Joseph Weizenbaum (MIT) &#x2192; <strong>ELIZA</strong>, primer chatbot.","children":[],"payload":{"tag":"li","lines":"14,15"}},{"content":"<strong>1966&#x2013;1972</strong> &#x1f916; Proyecto <strong>Shakey el Robot</strong> (Charles Rosen, SRI).","children":[],"payload":{"tag":"li","lines":"15,16"}},{"content":"<strong>1969</strong> &#x1f4da; Minsky &amp; Papert &#x2192; publican <em>Perceptrons</em> (cr&#xed;tica a redes neuronales).","children":[],"payload":{"tag":"li","lines":"16,18"}}],"payload":{"tag":"h2","lines":"12,13"}},{"content":"&#x2744;&#xfe0f; A&#xf1;os 70 &#x2013; 80: <em>El Primer Invierno de la IA</em>","children":[{"content":"<strong>1971</strong> &#x2702;&#xfe0f; EE.UU. recorta fondos militares en IA.","children":[],"payload":{"tag":"li","lines":"21,22"}},{"content":"<strong>1972</strong> &#x1f527; Surge <strong>Prolog</strong> (Alain Colmerauer, Robert Kowalski).","children":[{"content":"Nace el sistema experto <strong>MYCIN</strong> (Edward Shortliffe, Stanford).","children":[],"payload":{"tag":"li","lines":"23,24"}}],"payload":{"tag":"li","lines":"22,24"}},{"content":"<strong>1973</strong> &#x26a0;&#xfe0f; <strong>Informe Lighthill</strong> (Reino Unido) &#x2192; provoca recortes masivos.","children":[],"payload":{"tag":"li","lines":"24,25"}},{"content":"<strong>1979</strong> &#x1f5a5;&#xfe0f; Nace <strong>XCON</strong> (John McDermott, DEC).","children":[],"payload":{"tag":"li","lines":"25,26"}},{"content":"<strong>1980</strong> &#x1f324;&#xfe0f; Renace la inversi&#xf3;n gracias a sistemas expertos.","children":[],"payload":{"tag":"li","lines":"26,28"}}],"payload":{"tag":"h2","lines":"20,21"}},{"content":"&#x1f4bc; A&#xf1;os 80: <em>Primavera Comercial</em>","children":[{"content":"&#x1f31f; <strong>Edward Feigenbaum</strong> impulsa sistemas expertos.","children":[],"payload":{"tag":"li","lines":"31,32"}},{"content":"&#x1f9ec; <strong>MYCIN</strong> diagnostica enfermedades de la sangre.","children":[],"payload":{"tag":"li","lines":"32,33"}},{"content":"&#x1f517; <strong>Judea Pearl</strong> desarrolla <strong>Redes Bayesianas</strong>.","children":[],"payload":{"tag":"li","lines":"33,34"}},{"content":"&#x1f4b0; Auge de la industria de IA, atrayendo grandes inversiones.","children":[],"payload":{"tag":"li","lines":"34,36"}}],"payload":{"tag":"h2","lines":"30,31"}},{"content":"&#x1f504; Finales de los 80 &#x2013; 90: <em>Segundo Invierno y Renacimiento Conexionista</em>","children":[{"content":"&#x26a1; Geoffrey Hinton, Rumelhart &amp; Williams &#x2192; <strong>Backpropagation</strong>.","children":[],"payload":{"tag":"li","lines":"39,40"}},{"content":"&#x1f9e0; Yann LeCun &#x2192; CNNs para reconocimiento de d&#xed;gitos (AT&amp;T).","children":[],"payload":{"tag":"li","lines":"40,41"}},{"content":"<strong>1997</strong> &#x265f;&#xfe0f; <strong>IBM Deep Blue</strong> derrota a Garry Kasparov en ajedrez.","children":[],"payload":{"tag":"li","lines":"41,43"}}],"payload":{"tag":"h2","lines":"38,39"}},{"content":"&#x1f310; 2000s: <em>Big Data y Deep Learning</em>","children":[{"content":"<strong>2002</strong> &#x1f916; Robots dom&#xe9;sticos (Roomba).","children":[],"payload":{"tag":"li","lines":"46,47"}},{"content":"<strong>2004&#x2013;2007</strong> &#x1f697; DARPA Grand Challenges (veh&#xed;culos aut&#xf3;nomos).","children":[],"payload":{"tag":"li","lines":"47,48"}},{"content":"<strong>2006</strong> &#x1f525; Geoffrey Hinton revive el <strong>Deep Learning</strong>.","children":[],"payload":{"tag":"li","lines":"48,49"}},{"content":"<strong>2011</strong> &#x1f3a4; IBM <strong>Watson</strong> gana en <em>Jeopardy!</em>.","children":[],"payload":{"tag":"li","lines":"49,50"}},{"content":"<strong>2012</strong> &#x1f4f8; <strong>AlexNet</strong> revoluciona <em>ImageNet</em>.","children":[],"payload":{"tag":"li","lines":"50,52"}}],"payload":{"tag":"h2","lines":"45,46"}},{"content":"&#x1f4f1; 2010s: <em>IA en la Vida Cotidiana</em>","children":[{"content":"<strong>2014</strong> &#x1f4f2; Asistentes virtuales: <em>Siri, Alexa, Cortana, Google Now</em>.","children":[],"payload":{"tag":"li","lines":"55,56"}},{"content":"<strong>2016</strong> &#x1f3ae; <strong>AlphaGo</strong> (DeepMind) vence a Lee Sedol en Go.","children":[],"payload":{"tag":"li","lines":"56,57"}},{"content":"<strong>2017</strong> &#x2699;&#xfe0f; <em>Attention is All You Need</em> &#x2192; Transformers.","children":[],"payload":{"tag":"li","lines":"57,58"}},{"content":"<strong>2018</strong> &#x1f3c6; Premio Turing &#x2192; Hinton, Bengio y LeCun (Deep Learning).","children":[],"payload":{"tag":"li","lines":"58,60"}}],"payload":{"tag":"h2","lines":"54,55"}},{"content":"&#x1f680; 2020s: <em>La Era de la IA Generativa</em>","children":[{"content":"<strong>2020</strong> &#x1f9ec; <strong>AlphaFold</strong> resuelve plegamiento de prote&#xed;nas.","children":[{"content":"&#x1f4dd; <strong>GPT-3</strong> (OpenAI).","children":[],"payload":{"tag":"li","lines":"64,65"}}],"payload":{"tag":"li","lines":"63,65"}},{"content":"<strong>2021&#x2013;2022</strong> &#x1f3a8; Modelos generativos: <em>DALL&#xb7;E, Stable Diffusion, MidJourney</em>.","children":[],"payload":{"tag":"li","lines":"65,66"}},{"content":"<strong>2022</strong> &#x1f4ac; <strong>ChatGPT</strong> llega al p&#xfa;blico masivo.","children":[],"payload":{"tag":"li","lines":"66,67"}},{"content":"<strong>2023</strong> &#x1f30d; ChatGPT supera <strong>100M usuarios</strong> en 2 meses.","children":[],"payload":{"tag":"li","lines":"67,68"}}],"payload":{"tag":"h2","lines":"62,63"}}],"payload":{"tag":"h1","lines":"0,1"}},{})</script>
+</body>
+</html>
